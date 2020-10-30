@@ -1,0 +1,19 @@
+[package]
+name = "giganotes-core-js"
+version = "0.1.0"
+build = "build.rs"
+edition = "2018"
+
+[lib]
+name = "giganotescore"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+#giganotes-core = { git = "https://github.com/FourthByteLabs/giganotes-core", version = "1.0.0" }
+
+[dependencies]
+neon = "0.3.3"
+giganotes-core = { path = "../../giganotes-core" }
+simple_logger = "1.9.0"
+log = { version = "^0.4.11" }

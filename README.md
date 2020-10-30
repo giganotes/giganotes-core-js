@@ -1,0 +1,1 @@
+# giganotes-core-js

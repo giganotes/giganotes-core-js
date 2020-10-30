@@ -1,0 +1,17 @@
+{
+  "name": "giganotes-core-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "gen-proto": "protoc --proto_path=protos --js_out=import_style=commonjs,binary:./lib protos/messages.proto",
+    "build": "npm run gen-proto && neon build --release",
+    "install": "npm run build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "google-protobuf": "^3.13.0",
+    "neon-cli": "^0.3.3"
+  }
+}
